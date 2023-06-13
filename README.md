@@ -28,13 +28,21 @@ ENDPOINTS DISPONÍVEIS
 -------------------------------------------------------------------------
 Os seguintes endpoints são disponibilizados pela API:
 
-Endpoint: /users/<user_id> 
-Método: GET
-Descrição: Retorna o papel do usuário informado pelo id (user_id). 
+Endpoint: /users/<user_id>
 
-Endpoint: /users 
+Método: GET
+
+Descrição: Retorna o papel do usuário informado pelo id (user_id).
+
+
+
+Endpoint: /users
+
 Método: POST
-Descrição: Cria um novo usuário na base de dados. 
+
+Descrição: Cria um novo usuário na base de dados.
+
 Campos obrigatórios: {"name": String, "email": String, "role": String}
+
 Campos não obrigatórios: {"password": String}
 -------------------------------------------------------------------------
