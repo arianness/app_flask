@@ -6,10 +6,10 @@ Para executar a aplicação localmente, utilize um container do Docker.
 Siga os passos para gerar e executar o container no diretório do 
 arquivo Dockerfile: 
 
-1. Gerando o Container
+1. Gerando o Container: 
 	 $ docker image build -t api-python .
 
-2. Executando o Container
+2. Executando o Container:
 	$ docker run -p 5001:5000 -d api-python
 
 3. Acesse a url http://localhost:5001 via POSTMAN 
