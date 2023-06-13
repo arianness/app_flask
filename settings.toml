@@ -1,0 +1,19 @@
+[default]
+DEBUG = false
+SQLALCHEMY_TRACK_MODIFICATIONS=false
+SQLALCHEMY_DATABASE_URI='sqlite:///development.db'
+EXTENSIONS = [
+    "BANK.ext.database:init_app",
+    #"BANK.ext.auth:init_app",
+    #"BANK.ext.admin:init_app",
+    "BANK.ext.commands:init_app",
+    "BANK.blueprints.views:init_app",
+]
+
+[testing]
+SQLALCHEMY_DATABASE_URI = 'sqlite:///testing.db'
+TESTING = true
+WTF_CSRF_ENABLED = false
+
+[production]
+SQLALCHEMY_DATABASE_URI = 'sqlite:///production.db'
