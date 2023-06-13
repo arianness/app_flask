@@ -43,10 +43,9 @@ Os seguintes endpoints são disponibilizados pela API:
 
 	Descrição: Cria um novo usuário na base de dados.
 	
+	Campos obrigatórios: {"name": String, "email": String, "role": String}
 
-Campos obrigatórios: {"name": String, "email": String, "role": String}
-
-Campos não obrigatórios: {"password": String}
+	Campos não obrigatórios: {"password": String}
 
 -------------------------------------------------------------------------
 
